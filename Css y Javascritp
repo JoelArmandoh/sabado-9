@@ -1,0 +1,42 @@
+.btn-plus{
+
+position: fixed;
+left: 20px;
+bottom: 20px;
+
+}
+
+.notas{
+
+min-height: 100px;
+
+}
+
+
+let notas=[]
+let btn=document.getElementById("plus");
+btn.addEventListener("click", create);
+
+
+function create (){
+
+    let nota ={  
+        "id": getId(),  
+        "description":"",
+        "fecha":"",
+        "color": "#ffc107",
+        "color_fuente": "#000000",
+        "posicion":""
+    }
+}
+notas.push(nota);
+console.log(nota)
+
+
+function getId(){
+
+return Math.floor(Math.random()*(10000000-1000000))+ 1000000;
+
+
+
+};
